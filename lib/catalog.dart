@@ -26,7 +26,7 @@ class _CatalogState extends State<Catalog> {
 
   @override
   Widget build(BuildContext context) {
-
+    final action = Provider.of<Action>(context);
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -39,7 +39,7 @@ class _CatalogState extends State<Catalog> {
             child: Text(
               "Cartalog",
               style:
-                  TextStyle(fontFamily: "Cooper Black BT", color: Colors.black
+                  TextStyle(fontFamily: "Cooper_Black_BT", color: Colors.black
                   ,fontSize: 25),
             ),
           ),
@@ -80,7 +80,7 @@ class _CatalogState extends State<Catalog> {
 
 
   Widget _itemlistTile(context, Item item, int index) {
-    //var action = Provider.of<Action>(context);
+    final action = Provider.of<Action>(context);
     String name = item.name;
 
     return ListTile(
@@ -100,12 +100,12 @@ class _CatalogState extends State<Catalog> {
                   width: 255,
                   height: 50,
                   child: Padding(
-                    padding: EdgeInsets.fromLTRB(15, 15, 0, 0),
+                    padding: EdgeInsets.fromLTRB(15, 10, 0, 0),
                     child:
                       Text(name,
                           textAlign: TextAlign.start,
                           style: TextStyle(
-                            fontFamily: "Roboto-Regular",
+                            fontFamily: "NotoSansKR-Thin",
                             fontSize: 18,
 
                           )),
@@ -118,7 +118,7 @@ class _CatalogState extends State<Catalog> {
                   children: [
                     TextButton(
                         onPressed: () {
-                          //action.add(name);/////////////
+                          action.add_item(item);/////////////
                           setState(() {
                             _list[index] = !_list[index];
                           });

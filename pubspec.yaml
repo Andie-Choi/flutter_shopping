@@ -70,7 +70,7 @@ flutter:
         - asset: lib/font/Roboto-Regular.ttf
     - family: NotoSansKR-Thin
       fonts:
-        - asset: lib/font/NotoSansKR-Thin.ttf
+        - asset: lib/font/NotoSansKR-Thin.otf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

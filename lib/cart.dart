@@ -30,7 +30,7 @@ class Cart extends StatelessWidget {
           child: Text(
             "Cart",
             style: TextStyle(
-                fontFamily: "Cooper Black BT",
+                fontFamily: "Cooper_Black_BT",
                 color: Colors.black,
                 fontSize: 25),
           ),
